@@ -1,0 +1,14 @@
+path = "example.sh"
+stop_afer_first_fail = false
+# Millisecond
+delay = 200
+
+[[tests]]
+name = "first test"
+command = "asdf one two three "
+expected_output = "one two three four five six"
+
+[[tests]]
+name = "test with tar"
+command = "tar -"
+expected_output = "list lala"
